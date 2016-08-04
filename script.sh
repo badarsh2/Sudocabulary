@@ -1,3 +1,8 @@
 wget -O ~/.vocab "http://bit.ly/1WinY8l"
-echo 'chmod +x ~/.vocab' >> ~/.bashrc
-echo '~/.vocab' >> ~/.bashrc
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  OSBASHRC=bashrc
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  OSBASHRC=bash_profile
+fi
+echo 'chmod +x ~/.vocab' >> ~/.$OSBASHRC
+echo '~/.vocab' >> ~/.$OSBASHRC
