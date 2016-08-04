@@ -4,5 +4,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   OSBASHRC=bash_profile
 fi
+echo "" >> ~/.$OSBASHRC
 echo 'chmod +x ~/.vocab' >> ~/.$OSBASHRC
 echo '~/.vocab' >> ~/.$OSBASHRC
