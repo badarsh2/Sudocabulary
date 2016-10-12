@@ -1,4 +1,5 @@
-wget -O ~/.vocab "http://bit.ly/1WinY8l"
+wget -O ~/.vocab "https://goo.gl/N4EiTq"
+wget -O ~/.vocabscript "https://goo.gl/gI7xKQ"
 if [[ "$OSTYPE" == "linux-gnu" && $(echo $0) == "bash" ]]; then
 	OSBASHRC=bashrc
 elif [[ $(echo $0 == "zsh") ]]; then
