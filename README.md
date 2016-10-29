@@ -15,4 +15,5 @@ Mnemonics for each word for easy remembering!
 
 Contributors
 ----------
-[B Adarsh](https://github.com/badarsh2) <br/>
+[B Adarsh](https://github.com/badarsh2)  
+[lakshmanaram](https://github.com/lakshmanaram) <br/>
