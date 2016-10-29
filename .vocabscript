@@ -10,8 +10,8 @@ PURPLE='\033[0;35m'
 NC='\033[0m' # No Color
 bold=$(tput bold)
 normal=$(tput sgr0)
-printf "${bold}WORD OF THE SESSION: ${RED}${wordarray[rand-1]}${NC}\n"
-printf "${bold}MEANING            : ${PURPLE}${meaningarray[rand-1]}${NC}\n"
+printf "${bold}Word Of The Session: ${RED}${wordarray[rand-1],,}${NC}\n"
+printf "${bold}Meaning            : ${PURPLE}${meaningarray[rand-1],,}${NC}\n"
 printf "\n"
 
 exit 0
