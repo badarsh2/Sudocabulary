@@ -10,3 +10,4 @@ fi
 echo "" >> ~/.$OSBASHRC
 echo 'chmod +x ~/.vocab' >> ~/.$OSBASHRC
 echo '~/.vocab' >> ~/.$OSBASHRC
+
