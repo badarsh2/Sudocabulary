@@ -20,6 +20,7 @@ setup(name='sudocabulary',
       author='badarsh2',
       author_email='badarsh2@gmail.com',
       license='Apache-2.0',
+      packages=['sudocabulary'],
       cmdclass={
           'install': InstallEntry,
           'develop': InstallEntry,
