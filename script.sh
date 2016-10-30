@@ -1,5 +1,5 @@
-wget -O ~/.vocab "https://goo.gl/N4EiTq"
-wget -O ~/.vocabscript "https://goo.gl/gI7xKQ"
+wget -O ~/.vocab "https://goo.gl/N4EiTq" --no-check-certificate
+wget -O ~/.vocabscript "https://goo.gl/gI7xKQ" --no-check-certificate
 if [[ "$OSTYPE" == "linux-gnu" && $(echo $0) == "bash" ]]; then
 	OSBASHRC=bashrc
 elif [[ "$OSTYPE" == "darwin"* ]]; then
