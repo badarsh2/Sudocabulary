@@ -2,20 +2,15 @@
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	OSBASHRC=bashrc
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-  OSBASHRC=bash_profile
+	OSBASHRC=bash_profile
 fi
-if grep -q $'\nchmod +x ~/.vocab\n~/.vocab' ~/.$OSBASHRC
-then
-    echo ""
-else
-   echo $'\nchmod +x ~/.vocab\n~/.vocab' >> ~/.$OSBASHRC
+if ! grep -q $'\nchmod +x ~/.vocab\n~/.vocab' ~/.$OSBASHRC; then
+	echo $'\nchmod +x ~/.vocab\n~/.vocab' >> ~/.$OSBASHRC
 fi
 
-
-OSBASHRC=zshrc
-if grep -q $'\nchmod +x ~/.vocab\n~/.vocab' ~/.$OSBASHRC
-then
-    echo ""
-else
-   echo $'\nchmod +x ~/.vocab\n~/.vocab' >> ~/.$OSBASHRC
+OSBASHRC="zshrc"
+if [[ -f ~/.$OSBASHRC ]]; then
+	if ! grep -q $'\nchmod +x ~/.vocab\n~/.vocab' ~/.$OSBASHRC; then
+		echo $'\nchmod +x ~/.vocab\n~/.vocab' >> ~/.$OSBASHRC
+	fi
 fi
