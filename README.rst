@@ -33,28 +33,6 @@ Preview
         :width: 100%
         :align: center
 
-Development
----------------
-
-Clone this repository to get started.
-
-.. code-block:: bash
-
-    git clone https://github.com/badarsh2/Sudocabulary.git
-    cd Sudocabulary/
-
-And install it.
-
-.. code-block:: bash
-
-    python setup.py install
-
-Install it for development.
-
-.. code-block:: bash
-
-    python setup.py develop
-
 How to Contribute
 -----------------
 
