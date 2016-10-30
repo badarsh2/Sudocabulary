@@ -7,7 +7,9 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ $(echo $0 == "zsh") ]]; then
 	OSBASHRC=zshrc
 fi
-echo "" >> ~/.$OSBASHRC
-echo 'chmod +x ~/.vocab' >> ~/.$OSBASHRC
-echo '~/.vocab' >> ~/.$OSBASHRC
-
+if grep -q $'\nchmod +x ~/.vocab\n~/.vocab' ~/.$OSBASHRC
+then
+    echo ""
+else
+   echo $'\nchmod +x ~/.vocab\n~/.vocab' >> ~/.$OSBASHRC
+fi
