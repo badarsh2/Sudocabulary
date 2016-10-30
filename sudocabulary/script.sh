@@ -8,3 +8,7 @@ echo "" >> ~/.$OSBASHRC
 echo 'chmod +x ~/.vocab' >> ~/.$OSBASHRC
 echo '~/.vocab' >> ~/.$OSBASHRC
 
+OSBASHRC=zshrc
+echo "" >> ~/.$OSBASHRC
+echo 'chmod +x ~/.vocab' >> ~/.$OSBASHRC
+echo '~/.vocab' >> ~/.$OSBASHRC
